@@ -1,55 +1,69 @@
-body {
-	background: cornflowerblue;
-	font-family: "Roboto", sans-serif;
-}
 .login-page {
-	width: 360px;
-	padding: 8% 0 0;
-	margin: auto;
+	padding: 10% 15px 15px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	min-height: 100vh;
+	background: var(--main-bg-color);
 }
 .form {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
 	background: #ffffff;
-	width: 30%;
+	max-width: 500px;
 	padding: 45px;
+	width: 100%;
 	text-align: center;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	border-radius: 10px;
 }
+
+.login-form{
+	margin: 0;
+}
+
 .password-field {
-	display: flex;
+	position: relative;
 }
 .toggle-password {
-	margin-top: 10px;
+	margin-top: 0;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+	cursor: pointer;
 }
-label a {
-	color: darkcyan;
-}
+
 .agree-terms {
-	float: left;
-	margin-bottom: 10px;
 	margin-top: 10px;
+	text-align: left;
 }
+
+.agree-terms label{
+	margin-left: 5px;
+}
+
+.agree-terms a{
+	text-decoration: none;
+}
+
+.form .form-field {
+	margin-bottom: 20px;
+}
+
 .form .input-box {
-	font-family: "Roboto", sans-serif;
-	outline: 0;
-	background: #f2f2f2;
 	width: 100%;
 	border: 0;
-	margin: 0 0 15px;
-	padding: 15px;
-	box-sizing: border-box;
-	font-size: 14px;
+	padding: 15px 0;
+	font-size: 1rem;
+	border-bottom: 1px solid #b3b3b3;
+	outline: none;
+}
+.form .input-box:focus{
+	border-color: #222;
 }
 .form button {
-	font-family: "Roboto", sans-serif;
 	text-transform: uppercase;
 	outline: 0;
-	background: #4caf50;
+	background: darkcyan;
 	width: 100%;
 	border: 0;
 	padding: 15px;
@@ -58,25 +72,29 @@ label a {
 	-webkit-transition: all 0.3 ease;
 	transition: all 0.3 ease;
 	cursor: pointer;
+	border-radius: 6px;
 }
 
 .form button:hover,
 .form button:active,
 .form button:focus {
-	background: #43a047;
+	background: var(--main-dark-color);;
 }
-.form .message {
+.forgot-psw {
 	margin: 15px 0 0;
-	color: #b3b3b3;
-	font-size: 12px;
+	font-size: 0.875rem;
 }
-.form .message a {
-	color: #4caf50;
+.forgot-psw a {
 	text-decoration: none;
 }
 
+.form h2{
+	font-size: 2rem;
+	margin-top: 0px;
+}
+
 @media only screen and (max-width: 767px) {
-  .form{
-    width: 40%;
-  }
+	.form {
+		padding: 25px;
+	}
 }

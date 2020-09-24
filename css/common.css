@@ -1,0 +1,27 @@
+:root {
+  --main-bg-color: #0e254c;
+  --main-color: darkcyan;
+  --main-dark-color: #146f6f;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: lightgray;
+  font-size: 1rem;
+}
+
+a {
+	color: var(--main-color);
+}
+
+a:hover {
+	color: var(--main-dark-color);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}

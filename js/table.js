@@ -7,6 +7,7 @@ function myFunction() {
   }
 }
 
-$("table").on("click", "tr.parent .fa-chevron-down", function () {
+$("table").on("click", "tr.parent .fa-chevron-circle-down", function () {
+  $(this).closest("tbody").siblings().removeClass('open')
   $(this).closest("tbody").toggleClass("open");
 });

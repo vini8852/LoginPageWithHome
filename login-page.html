@@ -5,31 +5,35 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
             />
+        <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/login-page.css" />
     </head>
     <body>
         <div class="login-page">
+            
             <div class="form">
+                <h2>Portal</h2>
+
                 <form
                     class="login-form"
                     name="loginForm"
                     method="post"
                     action="table.html"
                     >
-                    <div>
+                    <div class="form-field">
                         <input
                             type="text"
-                            placeholder="username"
+                            placeholder="Username"
                             id="username"
                             name="userid"
                             class="input-box"
                             required
                             />
                     </div>
-                    <div class="password-field">
+                    <div class="form-field password-field">
                         <input
                             type="password"
-                            placeholder="password"
+                            placeholder="Password"
                             id="password"
                             name="pwd"
                             class="input-box"
@@ -40,14 +44,14 @@
                             class="fa fa-fw fa-eye field_icon toggle-password"
                             ></span>
                     </div>
-                    <div class="agree-terms">
+                    <div class="form-field agree-terms">
                         <input
                             type="checkbox"
                             name="check"
                             value="checked"
                             id="check"
                             required
-                            /><label for="love">I agree to <a href="#">terms and conditions</a></label>
+                            /><label for="love">I agree to <a href="#">Terms and Conditions</a></label>
                     </div>
                     <button
                         id="login-form-submit"
@@ -55,9 +59,12 @@
                         onclick="return check(this.form)"
                         value="Login"
                         >
-                    login
+                    Sign in
                     </button>
-                    <p class="message">Forgot Password<a href="#"></a></p>
+                    <div class="forgot-psw">
+                        <a href="#">Forgot Password</p>
+                    </div>
+                    
                 </form>
             </div>
         </div>
